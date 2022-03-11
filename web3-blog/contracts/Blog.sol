@@ -23,7 +23,7 @@ contract Blog {
     mapping(uint => Post) private idToPost;
     mapping(string => Post) private hashToPost;
 
-    /* events facilitate communication between smart contractsand their user interfaces  */
+    /* events facilitate communication between smart contracts and their user interfaces  */
     /* i.e. we can create listeners for events in the client and also use them in The Graph  */
     event PostCreated(uint id, string title, string hash);
     event PostUpdated(uint id, string title, string hash, bool published);
